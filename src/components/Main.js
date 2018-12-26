@@ -246,7 +246,7 @@ export default class Main extends Component {
           <MDBCol>
             {this.state.finished === false ? 
             <Animation type="slideInLeft">
-            <MDBJumbotron  className="d-flex justify-content-start">
+            <MDBJumbotron  className="d-flex justify-content-center align-items-center">
               <h2 className="h1 display-3">Vyhľadať v databáze obcí</h2>
               {this.state.loading ?   <div className="loader display-3 align-baseline"></div> : 
               <AutoComplete
