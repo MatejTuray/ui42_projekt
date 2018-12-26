@@ -27,7 +27,8 @@
     "build": "npm run build-css && react-scripts build",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "heroku-postbuild": "npm-run-all build"
   },
   "eslintConfig": {
     "extends": "react-app"
