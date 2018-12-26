@@ -1,0 +1,217 @@
+.navbar_img{
+    height: $l-size;
+    width: auto
+}
+.nav_megamenu{
+    padding-left: 0.5rem;    
+    margin-top: 1.5rem
+  
+}
+.nav_megamenu_item{
+    margin-right: 2rem;
+}
+.navbar_language{
+    margin-left: 10rem;
+    margin-top: -2.1rem;
+    margin-right: 0.1rem;
+    float: right !important;    
+}
+.input-group{
+    align-items: baseline
+}
+.search{
+    width: 19rem;
+    margin-top: .5rem;
+    margin-left: 1.2rem;
+    margin-right: 0.5rem;
+    border-radius: 8px !important;
+  
+}
+.navbar .dropdown-menu{
+    margin-left: -0.6rem;
+    z-index: 2001;
+}
+.navbar-toggler{
+    float: right !important;
+}
+.nav_search_icon{
+  
+    z-index: 0;
+    color: rgb(172, 160, 160);
+    font-size: $s-size;
+   
+}
+.nav_search_button{
+    margin-left: -3rem;
+    z-index: 2000;
+    background: none;
+    border: none;
+    width: 1rem;
+    padding: 0rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+.navbar_right{
+    margin-left: -20rem;
+    padding-right: 10rem
+}
+
+
+
+#nav_login_button{
+    margin-top: -0.5rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1rem;
+    padding-right:  1rem;
+    margin-left: 2.4rem; 
+    margin-right: 2rem;
+    width: 17.35rem;
+    background-color: #07d3a9;
+    border-radius: 8px !important;
+    border: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+.col_margin{
+    margin-right: -3rem;
+}
+.dropdown_menu.dropdown_menu-right.show{
+    text-align: center;
+    z-index: 2001;
+    
+}
+.dropdown-toggle::after{
+    color: grey;
+}
+
+@media (min-width:1440px){
+    #nav_login_button{
+        width: 10rem;
+        margin-top: -8rem;
+        margin-left: 69.5rem;
+        padding:0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .search{
+        width: 15rem;
+        margin-top: -3.5rem;
+        margin-right: 0;
+        margin-left: -1rem;
+    }
+    .navbar_language{
+        margin-top: -2rem;
+        margin-left: 158rem;
+    }
+    .col_margin{
+        margin-right: 0rem;
+        margin-top: -3rem;
+    }
+    .col_margin--input{
+        margin-left: 55rem;
+    }
+    #kontakty{
+        
+        margin-left: 35rem;
+    }
+    .nav_megamenu{
+        margin-top: -1.5rem;
+    }
+    
+
+}
+@media(max-width: 1200px) and (min-width: 1024px){
+ 
+    .search{        
+        margin-top: -0.5rem;   
+          }
+    #nav_login_button{
+        margin-top: -1.7rem;   
+    }
+
+}
+
+@media(max-width:320px) and (min-width:320px){
+    .search{        
+        margin-left: 0.2rem;   
+          }
+    #nav_login_button{
+        margin-left: 1rem;   
+          }
+    .navbar_language{
+        margin-right: 1rem;   
+    }
+    .navbar-toggler{
+        margin-right: 1rem;  
+    }
+}
+@media(min-width:568px) and(max-width:568px){
+    .search{        
+        margin-left: 5rem;   
+          }
+    #nav_login_button{
+        margin-left: 10rem; 
+        width: 12rem;  
+          }
+}
+@media(max-width:763px)and (min-width:667px){
+    .navbar_language{
+        margin-top: -1rem;   
+    }
+    .search{        
+        margin-left: 5rem;   
+          }
+    #nav_login_button{
+            margin-left: 10rem; 
+            width: 13rem;  
+              }
+}
+@media(max-width:812px) and (min-width: 812px){
+    .search{        
+        margin-left: 0rem;
+          }
+    #nav_login_button{
+            margin-left: 0rem; 
+            width: 18rem;  
+              }
+    .form-control.search{
+        padding-right: 17rem;
+    } 
+}
+@media(max-width:1366px) and (min-width: 1366px){
+    #nav_login_button{
+        width: 10rem;
+        margin-top: -8rem;
+        margin-left: 65rem;
+        padding:0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .search{
+        width: 15rem;
+        margin-top: -3.5rem;
+        margin-right: 0;
+        margin-left: -1rem;
+    }
+    .navbar_language{
+        margin-top: -2rem;
+        margin-left: 140rem;
+    }
+    .col_margin{
+        margin-right: 0rem;
+        margin-top: -3rem;
+    }
+    .col_margin--input{
+        margin-left: 50rem;
+    }
+    #kontakty{
+        
+        margin-left: 25rem;
+    }
+    .nav_megamenu{
+        margin-top: -1.5rem;
+    }
+
+}

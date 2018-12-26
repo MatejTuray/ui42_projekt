@@ -1,0 +1,226 @@
+#main{
+background: #00c6ff !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #0072ff, #00c6ff) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 90vh;
+
+}
+#main--details{
+    background-color: white !important;
+ 
+    
+}
+.jumbotron{    
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border-radius: 0;
+}
+.jumbotron-fluid{
+    color: black;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);        
+    background: linear-gradient(to bottom, darken(#f8f8f8, 10) 70%, white 30%) 
+    
+}
+
+.main_labels{
+    
+}
+.main_values{
+    margin-top: 3rem;
+}
+.display-3{
+    font-weight: 200;
+    font-size:2.5rem;
+    margin-top: 6rem;
+}
+#autocomplete{
+    margin-top: 1rem;
+    
+}
+.p-autocomplete-panel{
+    z-index: 2000;
+    max-height: 100px
+}
+.p-autocomplete .p-autocomplete-input{
+    padding: 0.7rem !important;    
+    border-radius: 7px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 60vw !important;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.p-inputwrapper-focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);   
+    border-radius: 7px;
+}
+
+.main_heading--details{
+    margin-bottom: 2rem;
+}
+.main_leftbox--details{
+   
+}
+.text-left{
+    font-size: 1rem
+}
+
+
+.main_rightbox--details{
+    margin-top: 4rem;
+}
+.test::before{
+    display: table;
+    content: "";
+}
+.text-left{
+    word-wrap: break-word;
+}
+.main_heading_button--details{
+    background: transparent;
+    border: none;
+}
+
+@media (min-width: 1440px){
+    .loader{
+        margin-left: 29rem;
+        margin-top: 1rem;
+    }
+    #main{
+        height: 40vh
+    }
+    .display-3{
+        font-weight: 200;
+        font-size: 4.5rem;
+        margin-top: 0rem;
+    }
+    .p-autocomplete .p-autocomplete-input{
+        width: 30vw !important;
+    }
+    .p-autocomplete-panel{
+        z-index: 2000;
+        max-height: 200px
+    }
+    .jumbotron-fluid{
+        margin-left: -15rem;
+        height: 50vh;  
+        width: 85vw;
+        background: white!important;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,darken(#f8f8f8, 10) 50%, white 50%) !important;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, darken(#f8f8f8, 10) 50%, white 50%) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .main_labels{
+        margin-left: 6rem;  
+        line-height: 1.5;
+        margin-right: 6rem;     
+    }
+    .main_values{
+        margin-left: 0rem;        
+        margin-top:0;
+        line-height: 1.5  ;
+    }
+    .main_leftbox--details{
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:800px)and(min-width: 768px){
+    #main{
+        height: 50vh
+    }
+    .display-3{
+        font-weight: 200;
+        font-size: 4.5rem;
+        margin-top: 0rem;
+    }
+    .jumbotron-fluid{       
+        background: white!important;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom,darken(#f8f8f8, 10) 60%, white 40%) !important;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, darken(#f8f8f8, 10) 60%, white 40%)  !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .main_leftbox--details{
+        margin-right: -1rem;
+        margin-left: -1rem;
+    }
+    .main_labels{
+        margin-right: -1rem;
+    }
+    .text-left{
+        word-wrap: break-all;
+    }
+}
+
+@media(max-width:1200px) and (min-width: 1024px){
+    .jumbotron-fluid{       
+        background: linear-gradient(to right, darken(#f8f8f8, 10) 50%, white 50%) !important;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,darken(#f8f8f8, 10) 52%, white 48%) !important;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, darken(#f8f8f8, 10) 52%, white 48%) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .main_leftbox--details{
+        margin-right: -2.25rem;
+    }
+    .text-left{
+        word-wrap: break-word;
+    }
+   
+}
+@media(max-width:763px)and (min-width:667px){
+    .jumbotron-fluid{       
+        background: -webkit-linear-gradient(to bottom,darken(#f8f8f8, 10) 60%, white 40%) !important;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, darken(#f8f8f8, 10) 60%, white 40%)
+    }
+    .display-3{
+        font-weight: 200;
+        font-size: 2.5rem;
+        margin-top: 0rem;
+    }
+}
+@media(max-width:812px) and (min-width: 812px){
+    #main{height: 112vh;}
+    .display-3{
+        font-weight: 200;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+    .jumbotron-fluid{       
+        background: white!important;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom,darken(#f8f8f8, 10) 60%, white 40%) !important;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, darken(#f8f8f8, 10) 60%, white 40%)  !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
+@media(max-height:1366px) and (min-height: 1366px){
+#main{
+    height: 40vh
+}
+}
+@media(max-width:568px) and (min-width: 568px){
+    #main{
+        height: 90vh
+    }
+    .display-3{
+        font-weight: 200;     
+        margin-top: 1rem;
+    }
+}
+@media(max-width:1366px) and (min-width: 1366px){
+    #main{
+        height: 40vh
+    }
+    .display-3{
+        font-weight: 200;
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    .jumbotron-fluid{     
+        background: white!important;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,darken(#f8f8f8, 10) 50%, white 50%) !important;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, darken(#f8f8f8, 10) 50%, white 50%) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .main_leftbox--details{
+        margin-right: -10rem;
+    }
+    .col-xl-3{
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+}
