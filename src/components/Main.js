@@ -56,7 +56,7 @@ export default class Main extends Component {
             console.log(e);
             axios
               .get(
-                `https://peaceful-oasis-31467.herokuapp.com/https://sk.wikipedia.org/wiki/Zoznam_slovensk%C3%BDch_obc%C3%AD_a_vojensk%C3%BDch_obvodov`
+                `https://sk.wikipedia.org/wiki/Zoznam_slovensk%C3%BDch_obc%C3%AD_a_vojensk%C3%BDch_obvodov`
               )
               .then(res => {
                 let $ = cheerio.load(res.data);
@@ -126,7 +126,7 @@ export default class Main extends Component {
           } catch (e) {
             axios
               .get(
-                `https://peaceful-oasis-31467.herokuapp.com/https://sk.wikipedia.org/wiki/Zoznam_slovensk%C3%BDch_obc%C3%AD_a_vojensk%C3%BDch_obvodov`
+                `https://sk.wikipedia.org/wiki/Zoznam_slovensk%C3%BDch_obc%C3%AD_a_vojensk%C3%BDch_obvodov`
               )
               .then(res => {
                 let $ = cheerio.load(res.data);
@@ -190,7 +190,7 @@ export default class Main extends Component {
     this.handleGeocoding(param)
     axios
       .get(
-        `https://peaceful-oasis-31467.herokuapp.com/https://www.e-obce.sk/obec/${param.replace(
+        `https://www.e-obce.sk/obec/${param.replace(
           /[^A-Z0-9]/gi,
           ""
         )}/${param.replace(/[\s-]+/g, "-")}.html`
@@ -248,7 +248,7 @@ export default class Main extends Component {
             <Animation type="slideInLeft">
             <MDBJumbotron>
               <h2 className="h1 display-3">Vyhľadať v databáze obcí</h2>
-              {this.state.loading ?   <div className="loader display-3 align-baseline"></div> : 
+              {this.state.loading ?   <div className="loader display-3 align-center justify-center"></div> : 
               <AutoComplete
               id="autocomplete"
               value={this.state.data}
