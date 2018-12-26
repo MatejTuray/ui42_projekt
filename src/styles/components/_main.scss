@@ -40,7 +40,8 @@ height: 90vh;
 }
 .p-autocomplete-panel{
     z-index: 2000;
-    max-height: 100px
+    max-height: 140px !important;
+
 }
 .p-autocomplete .p-autocomplete-input{
     padding: 0.7rem !important;    
