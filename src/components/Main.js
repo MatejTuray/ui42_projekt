@@ -45,13 +45,9 @@ export default class Main extends Component {
           try {
             this.setState({
               city: doc.infobox().data
-            });
-            console.log(this.state.city);
+            });           
             this.handleGetImage();
-            this.setState({
-              loading: false,
-              finished: true
-            })
+           
           } catch (e) {
             console.log(e);
             axios
@@ -60,8 +56,7 @@ export default class Main extends Component {
               )
               .then(res => {
                 let $ = cheerio.load(res.data);
-                let query = this.state.altQuery;
-                console.log(query);
+              let query = this.state.altQuery;              
                 let link;
                 let allLinks = $("a").each(function(i, element) {
                   // Scrape only the text nodes
@@ -86,13 +81,8 @@ export default class Main extends Component {
                     try {
                       this.setState({
                         city: doc.infobox().data
-                      });
-                      console.log(this.state.city);
-                      this.handleGetImage();
-                      this.setState({
-                        loading: false,
-                        finished: true
-                      })
+                      });                 
+                      this.handleGetImage();                 
                     } catch (e) {
                       console.log(e);
                       alert("Uvedenú obec nebolo možné nájsť");
@@ -104,8 +94,7 @@ export default class Main extends Component {
         }
       });
     } else {
-      let item = obceAStarostovia.find(item => item.starosta === input);
-      console.log(item.meno);
+      let item = obceAStarostovia.find(item => item.starosta === input);     
       this.setState({
         altQuery: item.meno
       });
@@ -116,13 +105,8 @@ export default class Main extends Component {
           try {
             this.setState({
               city: doc.infobox().data
-            });
-            console.log(this.state.city);
-            this.handleGetImage();
-            this.setState({
-              loading: false,
-              finished: true,
-            })
+            });       
+            this.handleGetImage();          
           } catch (e) {
             axios
               .get(
@@ -130,8 +114,7 @@ export default class Main extends Component {
               )
               .then(res => {
                 let $ = cheerio.load(res.data);
-                let query = this.state.altQuery;
-                console.log(query);
+                let query = this.state.altQuery;             
                 let link;
                 let allLinks = $("a").each(function(i, element) {
                   // Scrape only the text nodes
@@ -155,13 +138,8 @@ export default class Main extends Component {
                     try {
                       this.setState({
                         city: doc.infobox().data
-                      });
-                      console.log(this.state.city);
-                      this.handleGetImage();
-                      this.setState({
-                        loading: false,
-                        finished: true,
-                      })
+                      });                
+                      this.handleGetImage();                
                     } catch (e) {
                       console.log(e);
                       alert("Uvedenú obec nebolo možné nájsť");
@@ -215,7 +193,12 @@ export default class Main extends Component {
       this.setState({
         altImg: param
       });
+      
     }
+     this.setState({
+              loading: false,
+              finished: true
+            })
   }
   handleSuggest(event) {
     const suggestions = [...obce, ...starostovia];
@@ -226,8 +209,7 @@ export default class Main extends Component {
     this.setState({ suggestions: results });
   }
   handleGeocoding(input){
-    axios.get(`https://api.tomtom.com/search/2/geocode/${input}.JSON?key=${apiKey}`).then(res => {
-      console.log(res)
+    axios.get(`https://api.tomtom.com/search/2/geocode/${input}.JSON?key=${apiKey}`).then(res => {      
       this.setState({
         lat: res.data.results[0].position.lat,
         lon: res.data.results[0].position.lon
@@ -240,7 +222,7 @@ export default class Main extends Component {
   render() {
    
     return (
-      <div id={this.state.finished === false ? "main" : "main--details"} className="pt-5 pb-5 ">
+      <main id={this.state.finished === false ? "main" : "main--details"} className="pt-5 pb-5 ">
       <MDBContainer className="mt-2 text-center">    
         <MDBRow>
           <MDBCol>
@@ -323,7 +305,7 @@ export default class Main extends Component {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      </div>
+      </main>
     )
   }
 }
